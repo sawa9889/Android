@@ -33,11 +33,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void onOperationClick(View view){
-
         Button button = (Button)view;
         String op = button.getText().toString();
         String number = numberField.getText().toString();
-        // если введенно что-нибудь
         if(number.length()>0){
             number = number.replace(',', '.');
             try{
